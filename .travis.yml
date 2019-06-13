@@ -8,7 +8,7 @@ services:
 
 before_install:
   - docker image build -t vinci7/hello_ci .
-  - docker run -p 80:80 --name hello vinci7/hello_ci
+  - docker run -d -p 80:80 --name hello vinci7/hello_ci
 
 script:
   - docker ps | grep -q hello
