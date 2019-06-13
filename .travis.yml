@@ -11,6 +11,4 @@ before_install:
   - docker run -d -p 80:80 --name hello vinci7/hello_ci
 
 script:
-  - docker ps
-  - docker ps | grep hello
-  - docker ps | grep -q hello
+  - curl localhost:80
