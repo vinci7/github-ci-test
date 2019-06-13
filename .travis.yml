@@ -16,6 +16,6 @@ script:
 notifications:
   slack:
     rooms:
-    - dragon-ball-zju:XX6hoGyynbzcsPHz6vZwVw4i#travis-ci
+    - sbi-8yo8511:vCeMnUvkO6DsnmnSvQoKs7WJ#travis-notification
     on_success: always
     on_failure: always
