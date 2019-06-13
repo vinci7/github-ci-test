@@ -12,3 +12,10 @@ before_install:
 
 script:
   - curl localhost:80
+
+notifications:
+  slack:
+    rooms:
+    - dragon-ball-zju:XX6hoGyynbzcsPHz6vZwVw4i#travis-ci
+    on_success: always
+    on_failure: always
