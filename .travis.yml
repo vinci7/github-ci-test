@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - 1.10.x
+  - 1.11.x
+  - 1.12.x
+
+services:
+  - docker
+
+before_install:
+  - docker image build -t vinci/hello_ci .
+  - docker run -p 80:80 --name hello hello_ci
+
+script:
+  - docker ps | grep -q hello
